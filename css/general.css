@@ -7,6 +7,7 @@
 - Font-size
 Heading primary: 5.2
 Heading secondary: 3.4
+heading tertiary
 card title: 2.4
 Hero description 1.8
 Sub heading 1.2
@@ -44,6 +45,7 @@ card: 12px
 - Primary: #e67e22
 - Tints:#fff4e6
 - Shades: #cf711f
+- Darker Shade: #452400
 - Accents:
 - Greys:#343a40
 - feature-headline: #888
@@ -68,11 +70,16 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem hwb(28 13% 10% / 0.507);
+}
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #343a40;
+  overflow-x: hidden;
 }
 strong {
   font-weight: 500;
@@ -93,9 +100,19 @@ strong {
 .grid--2-col {
   grid-template-columns: repeat(2, 1fr);
 }
-
+.grid--2-col-auto {
+  grid-template-columns: repeat(2, auto);
+}
 .grid--3-col {
   grid-template-columns: repeat(3, 1fr);
+}
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--5-col {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
 }
 
 .grid--center-hv {
@@ -111,6 +128,14 @@ strong {
   gap: 6.4rem;
 }
 
+.grid--2-cal-2-row {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid--4-col {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5.2rem;
+}
 .heading-primary {
   font-size: 5.2rem;
   line-height: 1.05;
@@ -122,8 +147,14 @@ strong {
   margin-bottom: 9.6rem;
 }
 
+.heading-tertiary {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 4.8rem;
+}
+
 .subheading {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: #cf711f;
   margin-bottom: 1.4rem;
@@ -131,6 +162,8 @@ strong {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
+
+/* --BUTTONS-- */
 
 .btn:link,
 .btn:visited {
@@ -163,4 +196,27 @@ strong {
   color: #555;
   background-color: #fff4e6;
   outline: 2px solid #fff;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  padding: 5.4rem;
+}
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-align: center;
+  grid-column: 1/-1;
+  font-size: 2rem;
+  color: #e67e22;
+  transition: all 0.3s;
+  text-decoration: none;
+  border-bottom: 1px solid #e67e22;
+  padding-bottom: 5px;
+}
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
 }
