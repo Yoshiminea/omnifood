@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+  name="description"
+  content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+  />
+  <link rel="icon" href="/img/icons/favicon.png">
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/queries.css">
@@ -12,9 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="javascript.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <title>Document</title>
+    <title>Omnifood &mdash; Never cook again!</title>
   </head>
   <body>
     <header class="header">
@@ -23,22 +29,22 @@
         class="header-logo"
         alt="Omnifood logo"
       />
-      <nav class="main-nav ">
+      <nav class="main-nav">
         <ul class="main-nav-list ">
           <li>
-            <a href="#" class="main-nav-link">How it works</a>
+            <a href="#how" class="main-nav-link">How it works</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Meals</a>
+            <a href="#meals" class="main-nav-link">Meals</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Testimonials</a>
+            <a href="#testimonials" class="main-nav-link">Testimonials</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Pricing</a>
+            <a href="#pricing" class="main-nav-link">Pricing</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link btn-cta">Section 4</a>
+            <a href="#cta" class="main-nav-link btn-cta">Start now</a>
           </li>
         </ul>
       </nav>
@@ -56,9 +62,7 @@
               A healthy meal delivered to your door,every single day
             </h1>
             <p class="hero-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-              architecto facere voluptatibus ipsam quam ipsum assumenda sint
-              ducimus sed iusto aut molestiae!
+              The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.
             </p>
             <div class="btn-container">
               <a href="#" class="btn btn--full">Start eating well</a>
@@ -118,7 +122,7 @@
         </div>
       </section>
       <!-- --HOW IT WORKS-- -->
-      <section class="section-how">
+      <section class="section-how" id = "how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -184,7 +188,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container">
           <span class="subheading"> meals </span>
           <h2 class="heading-secondary">
@@ -287,7 +291,7 @@
          </div>
       </section>
 <!-- --TESTIMONIALS-- -->
- <section class="section-testimonials">
+ <section class="section-testimonials" id="testimonials">
   <div class="container grid grid--2-col-testimonials grid--gap-c-w">
     <div class="testimonials">
       <span class="subheading">testimonials</span>
@@ -374,9 +378,9 @@
   </div>
  </section>
 <!-- --section-- -->
- <section class="section-pricing">
+ <section class="section-pricing" id="pricing">
   <div class="section-pricing-container container">
-    <div class="container--m-h"></div>
+    
     <span class="subheading">pricing</span>
     <h2 class="heading-secondary">Eating well without breaking the bank</h2>
     <div class="grid grid--2-col-auto price-grid">
@@ -452,7 +456,7 @@
     </div>
   </div>
 </section>
-<section class="section-form">
+<section class="section-form" id="cta">
   <div class="container">
     <article class="form grid">
       <div class="form-body">
