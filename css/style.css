@@ -67,8 +67,9 @@
 .sticky .header {
   position: fixed;
   z-index: 999;
-  background-color: #fff;
+  background-color: #ffffff75;
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(10px);
 }
 .sticky .section-hero {
   margin-top: 6.2rem;
