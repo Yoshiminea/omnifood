@@ -254,6 +254,9 @@
   .delivered-icons {
     display: flex;
   }
+  .hero-image {
+    max-width: 70%;
+  }
 }
 
 /* -FONT SIZES (PX)

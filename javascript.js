@@ -1,4 +1,6 @@
 const navButton = document.querySelector(".btn-mobile-icon-container");
+const manNavLinkEl = document.querySelectorAll(".main-nav-link");
+
 const mainNav = document.querySelector(".header");
 navButton.addEventListener("click", () => {
   mainNav.classList.toggle("open-nav");
@@ -8,6 +10,11 @@ navButton.addEventListener("click", () => {
   } else {
     html.style.overflow = "hidden";
   }
+});
+manNavLinkEl.forEach((element) => {
+  element.addEventListener("click", () => {
+    mainNav.classList.remove("open-nav");
+  });
 });
 
 // Select the target element
