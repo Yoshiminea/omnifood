@@ -118,7 +118,7 @@
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #ffffff8a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,6 +127,7 @@
     visibility: hidden;
     transform: translateX(100%);
     transition: all 0.3s;
+    backdrop-filter: blur(10px);
   }
   .main-nav-list {
     flex-direction: column;
