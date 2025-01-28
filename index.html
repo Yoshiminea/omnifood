@@ -462,25 +462,27 @@
       <div class="form-body">
 <h3 class="form-title">Get your first meal for free!</h3>
 <p class="form-text">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!</p>
-        <form action="submit" class = "sign-up grid" >
+        <form action="submit" class = "sign-up grid" name = "sign-up" netlify>
           <div class="form-input-group">
             <label for="myInput">Full Name</label>
-            <input type="text"id="myInput" placeholder="John Smith" required>
+            <input type="text"id="myInput" placeholder="John Smith" name="full-name" required>
           </div>
           <div class="form-input-group">
             <label for="myInput">Email address</label>
-            <input type="text"id="myInput" placeholder="johnsmith@gmail.com" required>
+            <input type="text"id="myInput" placeholder="johnsmith@gmail.com" 
+            name="email"required>
           </div>
           <div class="form-input-group">
-            <label for="myInput">Where did you hear from us?</label>
-            <select name="pets" id="pet-select" placeholder="Please choose an option" required>
+            <label for="select-where">Where did you hear from us?</label>
+            <select name="select-where" id="select-where" placeholder="Please choose an 
+            option" required>
               <option value="">Please choose an option</option>
               <option value="Social Media">Social Media</option>
               <option value="Friend">Friend</option>
           
             </select>
           </div>
-          <button class="btn-sign-up">Sign up now</button>
+          <button class="btn-sign-up" type="submit">Sign up now</button>
         </form>
       </div>
       <!-- <div class="form-img-box"> -->
