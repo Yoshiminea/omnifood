@@ -127,7 +127,7 @@
     visibility: hidden;
     transform: translateX(100%);
     transition: all 0.3s;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
   }
   .main-nav-list {
     flex-direction: column;
