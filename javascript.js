@@ -13,7 +13,7 @@ navButton.addEventListener("click", () => {
 });
 manNavLinkEl.forEach((element) => {
   element.addEventListener("click", () => {
-    mainNav.classList.remove("git open-nav");
+    mainNav.classList.remove("open-nav");
     const html = document.documentElement;
     html.style.overflow = "";
   });
